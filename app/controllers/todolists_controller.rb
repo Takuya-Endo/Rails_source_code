@@ -6,6 +6,9 @@ class TodolistsController < ApplicationController
   def create
     list = List.new(list_params)
     list.save
+
+    # binding.pry
+
     redirect_to '/top'
   end
 
